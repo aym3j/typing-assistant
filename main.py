@@ -48,10 +48,10 @@ def fix_selection():
 
 
     # Fix text
-    fix_selected_text(text)
+    fixed_text = fix_selected_text(text)
 
     # Paste text to clipboard
-    pyperclip.copy("This selected text has been fixed!")
+    pyperclip.copy(fixed_text)
     time.sleep(0.1)
 
     # Paste text to selected area
